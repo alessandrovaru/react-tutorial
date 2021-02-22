@@ -2,7 +2,7 @@
 const ProductCategoryRow = ({ id, productCategory }) => {
     return (
         <>
-            <tr>
+            <tr key={id}>
                 <td className='category'>{productCategory}</td>
             </tr>
         </>
