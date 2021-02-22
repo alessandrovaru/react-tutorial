@@ -2,6 +2,19 @@ import ProductCategoryRow from "./ProductCategoryRow";
 import ProductRow from './ProductRow';
 
 const ProductTable = ({ products }) => {
+    
+    let lastCategory = null
+    let rows = []
+
+    products.map((product) => {
+        if (product.category !== lastCategory ) {
+            rows.push(<ProductCategoryRow category={product.category} key={product.category} />)
+        }
+        rows.push(<ProductRow product={product} key={product.name} />)
+
+       return lastCategory = product.category         
+    })
+    
     return (
         <div className='product-table'>
             <table>
@@ -12,14 +25,7 @@ const ProductTable = ({ products }) => {
                     </tr>    
                 </thead>
                 <tbody>
-                    {products.map((product) => (
-                        <ProductCategoryRow id={product.id} productCategory={product.category} />
-                    ))}
-                    {products.map((product)=>(
-                        <ProductRow id={product.id} productName={product.name} productPrice={product.price} />
-                    ))}
-                    
-                    
+                    {rows}
                 </tbody>
             </table>
         </div>

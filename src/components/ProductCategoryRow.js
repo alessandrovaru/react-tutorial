@@ -1,9 +1,9 @@
 
-const ProductCategoryRow = ({ id, productCategory }) => {
+const ProductCategoryRow = ({ category }) => {
     return (
         <>
-            <tr key={id}>
-                <td className='category'>{productCategory}</td>
+            <tr>
+                <td className='category'>{category}</td>
             </tr>
         </>
     )

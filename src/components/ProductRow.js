@@ -1,10 +1,10 @@
 
-const ProductRow = ({ id, productName, productPrice }) => {
+const ProductRow = ({ product }) => {
     return (
         <>
-            <tr key = {id}>
-                <td>{productName}</td>
-                <td>{productPrice}</td>
+            <tr>
+                <td>{product.name}</td>
+                <td>{product.price}</td>
             </tr>
         </>
     )
