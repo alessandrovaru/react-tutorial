@@ -1,44 +1,44 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.filter-container{
+.filter-container {
   padding: 10px;
 }
 
-.search-container{
-  padding: 10px; 
+.search-container {
+  padding: 10px;
 }
 
-.search-container .search-bar{
-  width: 100px; 
+.search-container .search-bar {
+  width: 100px;
 }
 
-.search-container .filter-check{
+.search-container .filter-check {
   margin-right: 5px;
 }
 
-.search-container span{
+.search-container span {
   font-size: 12px;
 }
 
 .product-table {
   padding-left: 10px;
- }
-
-.product-table th{
- font-size: 12px;
- text-align: left;
 }
 
-.product-table .category{
-  font-size: 12px;
-  font-weight: bold;
- }
-
- .product-table td{
+.product-table th {
   font-size: 12px;
   text-align: left;
- }
+}
+
+.product-table .category {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-table td {
+  font-size: 12px;
+  text-align: left;
+}
